@@ -1,0 +1,21 @@
+[
+    {
+      "title": "AI Travel Memory Mapper",
+      "tech": "React • Node.js • AWS S3 • Rekognition",
+      "desc": "Full-stack photo assistant using GPT-4 Vision and AWS Rekognition.",
+      "link": "https://github.com/ashwinmv14/AgenticAI_GooglePhotos"
+    },
+    {
+      "title": "EKS Infrastructure Automation",
+      "tech": "Terraform • AWS EKS • Prometheus • Grafana",
+      "desc": "Automated GPU-ready EKS cluster provisioning with Terraform.",
+      "link": "https://github.com/ashwinmv14/eks-infra-automation"
+    },
+    {
+      "title": "Cloud Cost & Compliance Automation",
+      "tech": "AWS Lambda • Athena • Python • Grafana",
+      "desc": "Serverless cost anomaly detector & compliance pipeline.",
+      "link": "https://github.com/ashwinmv14/gRPC-Go"
+    }
+  ]
+  
