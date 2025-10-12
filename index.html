@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name — Portfolio</title>
-  <link href="style.css" rel="stylesheet" />
+  <title>Ashwinkumar MV — Cloud • AI/ML • DevOps</title>
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <script defer src="script.js"></script>
 </head>
+
 <body>
   <header class="nav">
-    <a class="brand" href="#home">Ashwinkumar Manickam Vaithiyanathan</a>
-    <button class="nav-toggle" aria-label="Open menu">☰</button>
+    <a href="#home" class="brand">Ashwinkumar M V</a>
+    <button class="nav-toggle">☰</button>
     <nav class="nav-links">
       <a href="#home">Home</a>
       <a href="#about">About</a>
@@ -22,72 +23,54 @@
   </header>
 
   <main id="home" class="hero">
-    <div class="hero-card glass">
-      <p class="eyebrow">Hello, I’m</p>
-      <h1>Ashwinkumar M V</h1>
-      <p class="tagline">Cloud • AI/ML • DevOps — building reliable, human-centered systems.</p>
+    <div class="hero-inner">
+      <p class="eyebrow">Hi, I’m</p>
+      <h1>Ashwinkumar Manickam Vaithiyanathan</h1>
+      <h2 class="typewriter">Cloud • AI/ML • DevOps Engineer</h2>
       <div class="cta-row">
-        <a class="btn" href="#contact">Connect</a>
-        <a class="btn ghost" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="resume.pdf" target="_blank" class="btn ghost">Resume</a>
       </div>
     </div>
   </main>
 
-  <section id="about" class="section">
-    <h2>About</h2>
-    <div class="grid-2">
-      <img class="avatar" src="images/me.jpg" alt="Portrait of Your Name">
-      <div class="glass" style="padding:1.2rem">
-        <p>I’m a CS grad student focused on cloud engineering, MLOps, and agentic AI.</p>
-        <p>I enjoy building fast, reliable systems and clear developer workflows.</p>
-      </div>
+  <section id="about" class="section fade-in">
+    <h2>About Me</h2>
+    <div class="about-grid">
+      <img src="images/me.jpg" alt="Portrait of Ashwinkumar" class="avatar" />
+      <p>
+        I’m a graduate student at NCSU specializing in Cloud Engineering, MLOps and Agentic AI.  
+        I love building scalable systems and automating reliable workflows across cloud-native stacks.
+      </p>
     </div>
   </section>
 
-  <section id="skills" class="section">
-    <h2>Experience & Skills</h2>
-    <div class="cards">
-      <article class="card glass">
-        <h3>Cloud & Infra</h3>
-        <p>AWS, Terraform, EKS, CI/CD</p>
-      </article>
-      <article class="card glass">
-        <h3>Data & ML</h3>
-        <p>Python, Bedrock, RAG, Grafana</p>
-      </article>
-      <article class="card glass">
-        <h3>Web</h3>
-        <p>React, FastAPI, REST</p>
-      </article>
+  <section id="skills" class="section fade-in">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill"><span>AWS / Terraform / EKS</span><div class="bar"><div class="fill" style="width:95%"></div></div></div>
+      <div class="skill"><span>Python / FastAPI / LangGraph</span><div class="bar"><div class="fill" style="width:90%"></div></div></div>
+      <div class="skill"><span>React / TypeScript / Node.js</span><div class="bar"><div class="fill" style="width:85%"></div></div></div>
+      <div class="skill"><span>Prometheus / Grafana / CI-CD</span><div class="bar"><div class="fill" style="width:80%"></div></div></div>
     </div>
   </section>
 
-  <section id="projects" class="section">
+  <section id="projects" class="section fade-in">
     <h2>Projects</h2>
-    <div class="cards">
-      <a class="card glass" href="https://github.com/your/repo1" target="_blank" rel="noopener">
-        <h3>Voice-Enabled RAG Agent</h3>
-        <p>Whisper + Bedrock + FastAPI</p>
-      </a>
-      <a class="card glass" href="https://github.com/your/repo2" target="_blank" rel="noopener">
-        <h3>EKS Infra Automation</h3>
-        <p>Terraform + AWS</p>
-      </a>
-      <a class="card glass" href="https://github.com/your/repo3" target="_blank" rel="noopener">
-        <h3>Cost Visibility & Tagging</h3>
-        <p>Athena + Lambda + Sheets</p>
-      </a>
+    <div id="project-cards" class="cards"></div>
+  </section>
+
+  <section id="contact" class="section fade-in">
+    <h2>Contact</h2>
+    <p>Let’s connect! Reach me at <a href="mailto:ashwinmv14@gmail.com">ashwinmv14@gmail.com</a></p>
+    <div class="cta-row">
+      <a href="https://github.com/ashwinmv14" target="_blank" class="btn">GitHub</a>
+      <a href="https://www.linkedin.com/in/ashwinkumar-mv/" target="_blank" class="btn ghost">LinkedIn</a>
     </div>
   </section>
 
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <!-- We'll wire a Formspree form later -->
-    <p>Say hi: <a href="mailto:you@example.com">you@example.com</a></p>
-  </section>
-
-  <footer class="section foot">
-    <p>© <span id="y"></span> Your Name</p>
+  <footer class="foot">
+    <p>© <span id="y"></span> Ashwinkumar MV · Built with 💙 and JavaScript</p>
   </footer>
 </body>
 </html>
