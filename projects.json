@@ -1,21 +1,23 @@
 [
-    {
-      "title": "AI Travel Memory Mapper",
-      "tech": "React • Node.js • AWS S3 • Rekognition",
-      "desc": "Full-stack photo assistant using GPT-4 Vision and AWS Rekognition.",
-      "link": "https://github.com/ashwinmv14/AgenticAI_GooglePhotos"
-    },
-    {
-      "title": "EKS Infrastructure Automation",
-      "tech": "Terraform • AWS EKS • Prometheus • Grafana",
-      "desc": "Automated GPU-ready EKS cluster provisioning with Terraform.",
-      "link": "https://github.com/ashwinmv14/eks-infra-automation"
-    },
-    {
-      "title": "Cloud Cost & Compliance Automation",
-      "tech": "AWS Lambda • Athena • Python • Grafana",
-      "desc": "Serverless cost anomaly detector & compliance pipeline.",
-      "link": "https://github.com/ashwinmv14/gRPC-Go"
-    }
-  ]
-  
+  {
+    "title": "EKS Infrastructure Automation",
+    "category": "devops",
+    "tech": "Terraform • AWS EKS • Prometheus • Grafana",
+    "desc": "Automated GPU-ready EKS cluster provisioning with Terraform, monitoring and cost-aware defaults.",
+    "link": "https://github.com/ashwinmv14/eks-infra-automation"
+  },
+  {
+    "title": "AI Travel Memory Mapper",
+    "category": "aiml",
+    "tech": "React • Node.js • GPT-4 Vision • AWS Rekognition",
+    "desc": "Photo assistant that organizes travel memories using vision + LLM for tagging and search.",
+    "link": "https://github.com/ashwinmv14/AgenticAI_GooglePhotos"
+  },
+  {
+    "title": "Hybrid Spatial-Temporal GCN",
+    "category": "stgcn",
+    "tech": "PyTorch • GCN • STGCN • Time-series",
+    "desc": "Research prototype combining spatial graph convolutions with temporal modeling for traffic prediction.",
+    "link": "#"
+  }
+]
