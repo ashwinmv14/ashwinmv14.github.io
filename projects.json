@@ -5,7 +5,7 @@
     "tech": "Terraform • AWS EKS • Prometheus • Grafana",
     "desc": "Automated GPU-ready EKS cluster provisioning with Terraform, monitoring and cost-aware defaults.",
     "link": "https://github.com/ashwinmv14/eks-infra-automation",
-    "image": "https://source.unsplash.com/800x600/?kubernetes,cloud"
+    "image": "images/projects/eks.jpg"
   },
   {
     "title": "AI Travel Memory Mapper",
@@ -13,7 +13,7 @@
     "tech": "React • Node.js • GPT-4 Vision • AWS Rekognition",
     "desc": "Photo assistant that organizes travel memories using vision + LLM for tagging and search.",
     "link": "https://github.com/ashwinmv14/AgenticAI_GooglePhotos",
-    "image": "https://source.unsplash.com/800x600/?ai,photography"
+    "image": "images/projects/ai-travel.jpg"
   },
   {
     "title": "Hybrid Spatial-Temporal GCN",
@@ -21,6 +21,6 @@
     "tech": "PyTorch • GCN • STGCN • Time-series",
     "desc": "Research prototype combining spatial graph convolutions with temporal modeling for traffic prediction.",
     "link": "#",
-    "image": "https://source.unsplash.com/800x600/?graph,traffic"
+    "image": "images/projects/stgcn.jpg"
   }
 ]
