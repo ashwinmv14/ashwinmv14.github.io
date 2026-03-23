@@ -45,6 +45,44 @@ fetch('projects.json')
     allProjects = [];
   });
 
+// Image fallback helpers
+function setProjectImageFallback(img, title) {
+  img.addEventListener('error', () => {
+    img.onerror = null;
+    img.src = 'https://picsum.photos/seed/' + encodeURIComponent(title) + '/800/600';
+  });
+}
+
+function setLogoFallback(img) {
+  img.addEventListener('error', () => {
+    img.onerror = null;
+    const key = (img.alt || img.title || '').toLowerCase();
+    // fallback mapping to icons8 (trusted free icons)
+    const map = {
+      'aws': 'https://img.icons8.com/color/96/000000/amazon-web-services.png',
+      'amazon web services': 'https://img.icons8.com/color/96/000000/amazon-web-services.png',
+      'terraform': 'https://img.icons8.com/color/96/000000/terraform.png',
+      'docker': 'https://img.icons8.com/color/96/000000/docker.png',
+      'kubernetes': 'https://img.icons8.com/color/96/000000/kubernetes.png',
+      'python': 'https://img.icons8.com/color/96/000000/python.png',
+      'pytorch': 'https://img.icons8.com/color/96/000000/pytorch.png',
+      'react': 'https://img.icons8.com/color/96/000000/react-native.png',
+      'node.js': 'https://img.icons8.com/color/96/000000/nodejs.png',
+      'nodejs': 'https://img.icons8.com/color/96/000000/nodejs.png'
+    };
+    for (const k in map) {
+      if (key.includes(k)) { img.src = map[k]; return; }
+    }
+    // generic fallback
+    img.src = 'https://img.icons8.com/fluency/96/000000/code.png';
+  });
+}
+
+// Attach logo fallbacks on DOM ready
+window.addEventListener('load', () => {
+  document.querySelectorAll('.skill-logos img').forEach(img => setLogoFallback(img));
+});
+
 function renderProjects(category) {
   const container = document.getElementById('project-cards');
   if (!container) return;
@@ -67,6 +105,7 @@ function renderProjects(category) {
     img.className = 'cover project-img';
     img.alt = p.title + ' cover';
     img.src = p.image || 'https://source.unsplash.com/800x600/?code';
+    setProjectImageFallback(img, p.title);
 
     const body = document.createElement('div');
     body.className = 'card-body';
