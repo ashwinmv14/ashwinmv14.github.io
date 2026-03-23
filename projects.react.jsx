@@ -67,6 +67,16 @@ function ProjectsApp() {
   const [selectedImages, setSelectedImage] = useLocalMap('pm:selectedImages');
 
   useEffect(() => {
+    // Clear old cached image selections on first load (cleanup old SVG data)
+    const cleaned = localStorage.getItem('pm:cleaned-2025');
+    if (!cleaned) {
+      localStorage.removeItem('pm:selectedImages');
+      localStorage.setItem('pm:cleaned-2025', 'true');
+      window.location.reload();
+    }
+  }, []);
+
+  useEffect(() => {
     fetch('projects.json')
       .then(r => r.json())
       .then(data => setProjects(Array.isArray(data) ? data : []))
