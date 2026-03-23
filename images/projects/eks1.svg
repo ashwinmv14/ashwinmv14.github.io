@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0" stop-color="#0b6ef6" />
+      <stop offset="1" stop-color="#00d4ff" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#eaf6ff" />
+  <rect x="60" y="60" width="1080" height="680" rx="20" fill="url(#g1)" opacity="0.15" />
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="100" y="220" font-size="56" fill="#04293a" font-weight="800">EKS Infrastructure Automation</text>
+    <text x="100" y="300" font-size="28" fill="#064a6d">Terraform • AWS EKS • Prometheus • Grafana</text>
+    <g transform="translate(100,360)">
+      <rect width="220" height="140" rx="12" fill="#ffffff" opacity="0.9" stroke="#d8eefc" />
+      <text x="32" y="80" font-size="36" fill="#0b6ef6">K8s</text>
+    </g>
+    <g transform="translate(360,360)">
+      <rect width="220" height="140" rx="12" fill="#ffffff" opacity="0.9" stroke="#d8eefc" />
+      <text x="32" y="80" font-size="36" fill="#00a3d9">Infra</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#fff8ff" />
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="80" y="160" font-size="48" fill="#04293a" font-weight="800">Hybrid Spatial-Temporal GCN</text>
+    <text x="80" y="210" font-size="20" fill="#075985">PyTorch • GCN • STGCN • Time-series</text>
+    <g transform="translate(80,260)">
+      <rect x="0" y="0" width="320" height="160" rx="12" fill="#fff" stroke="#f0e8ff" />
+      <g transform="translate(16,16)">
+        <rect x="0" y="0" width="88" height="88" rx="10" fill="#0b6ef6" opacity="0.08" />
+        <text x="22" y="52" font-size="28" fill="#064a6d">G</text>
+      </g>
+      <g transform="translate(120,16)">
+        <rect x="0" y="0" width="160" height="88" rx="10" fill="#ffffff" stroke="#e6f2ff" />
+        <text x="12" y="52" font-size="20" fill="#064a6d">Spatial • Temporal fusion</text>
+      </g>
+    </g>
+  </g>
+</svg>

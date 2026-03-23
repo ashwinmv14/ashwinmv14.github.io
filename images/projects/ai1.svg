@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#fffaf6" />
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="80" y="160" font-size="48" fill="#04293a" font-weight="800">AI Travel Memory Mapper</text>
+    <text x="80" y="210" font-size="20" fill="#075985">Vision + LLM • Photo organization</text>
+    <g transform="translate(80,260)">
+      <rect width="520" height="180" rx="16" fill="#0b6ef6" opacity="0.08" />
+      <g transform="translate(18,24)">
+        <rect x="0" y="0" width="120" height="120" rx="12" fill="#ffffff" stroke="#dbeffd" />
+        <text x="16" y="78" font-size="28" fill="#064a6d">IMG</text>
+      </g>
+      <g transform="translate(160,24)">
+        <rect x="0" y="0" width="120" height="120" rx="12" fill="#ffffff" stroke="#dbeffd" />
+        <text x="16" y="78" font-size="28" fill="#064a6d">GPT</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -69,14 +69,7 @@
   <section id="projects" class="section fade-in">
     <h2>Projects</h2>
 
-    <div class="project-filters" role="tablist" aria-label="Project filters">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="devops">DevOps</button>
-      <button class="filter-btn" data-filter="aiml">AI/ML</button>
-      <button class="filter-btn" data-filter="stgcn">Hybrid STGCN</button>
-    </div>
-
-    <div id="project-cards" class="cards" aria-live="polite"></div>
+    <div id="projects-root" class="cards"></div>
   </section>
 
   <section id="certifications" class="section fade-in">
@@ -100,5 +93,12 @@
   <footer class="foot">
     <p>© <span id="y"></span> Ashwinkumar MV · Built with 💙 and JavaScript</p>
   </footer>
+
+  <!-- React + Babel for small client-side app (projects) -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel" data-type="module" src="projects.react.jsx"></script>
+
 </body>
 </html>
