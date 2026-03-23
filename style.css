@@ -68,6 +68,20 @@ h1{font-size:clamp(2rem,5vw,3.3rem);margin:.5rem 0}
 .cert-card{background:linear-gradient(90deg,rgba(255,255,255,0.02),transparent);padding:1rem;border-radius:12px;border:1px solid rgba(255,255,255,0.03);min-width:220px}
 .muted{opacity:.7;color:#6b7b8a}
 .foot{text-align:center;padding:2rem 1rem;border-top:1px solid var(--stroke);opacity:.9;color:#7a8792}
+.conferences-grid{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1rem}
+.conf-card{background:linear-gradient(180deg,#ffffff,#fbfdff);border:1px solid var(--stroke);border-radius:14px;padding:1.2rem;min-width:240px;transition:transform .28s,box-shadow .28s}
+.conf-card:hover{transform:translateY(-4px);box-shadow:var(--card-glow)}
+.conf-card h3{color:var(--text);margin-bottom:.5rem}
+.conf-status{color:var(--accent1);font-weight:700;font-size:.9rem}
+.conf-desc{color:#6b7b8a;font-size:.9rem;margin-top:.5rem}
+
+.contact-methods{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+.contact-card{background:linear-gradient(180deg,#ffffff,#fbfdff);border:1px solid var(--stroke);border-radius:14px;padding:1rem;text-decoration:none;color:inherit;transition:transform .28s,box-shadow .28s;display:flex;align-items:center;gap:.8rem}
+.contact-card:hover{transform:translateY(-4px);box-shadow:var(--card-glow)}
+.contact-card .icon{font-size:2rem}
+.contact-card h3{color:var(--text);font-size:.95rem;margin:0}
+.contact-card p{color:#6b7b8a;font-size:.85rem;margin:0}
+
 @media(max-width:820px){
   .nav-toggle{display:inline-block;margin-left:auto}
   .nav-links{display:none}

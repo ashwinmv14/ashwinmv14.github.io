@@ -6,8 +6,7 @@
     "desc": "Automated GPU-ready EKS cluster provisioning with Terraform, monitoring and cost-aware defaults.",
     "link": "https://github.com/ashwinmv14/eks-infra-automation",
     "images": [
-      "images/projects/eks1.svg",
-      "images/projects/eks2.svg"
+      "images/projects/EKS.png"
     ]
   },
   {
@@ -17,8 +16,7 @@
     "desc": "Photo assistant that organizes travel memories using vision + LLM for tagging and search.",
     "link": "https://github.com/ashwinmv14/AgenticAI_GooglePhotos",
     "images": [
-      "images/projects/ai1.svg",
-      "images/projects/ai2.svg"
+      "images/projects/travel.png"
     ]
   },
   {
@@ -28,7 +26,7 @@
     "desc": "Research prototype combining spatial graph convolutions with temporal modeling for traffic prediction.",
     "link": "#",
     "images": [
-      "images/projects/stgcn1.svg"
+      "images/projects/stgcn.png"
     ]
   }
 ]
