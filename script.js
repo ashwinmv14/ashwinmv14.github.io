@@ -62,12 +62,37 @@ function renderProjects(category) {
     a.href = p.link || '#';
     a.target = '_blank';
     a.rel = 'noopener noreferrer';
-    a.innerHTML = `
-      <div class="card-tag">${(p.category || '').toUpperCase()}</div>
-      <h3>${p.title}</h3>
-      <p>${p.desc}</p>
-      <small>${p.tech}</small>
-    `;
+
+    const img = document.createElement('img');
+    img.className = 'cover project-img';
+    img.alt = p.title + ' cover';
+    img.src = p.image || 'https://source.unsplash.com/800x600/?code';
+
+    const body = document.createElement('div');
+    body.className = 'card-body';
+
+    const tag = document.createElement('div');
+    tag.className = 'card-tag';
+    tag.textContent = (p.category || '').toUpperCase();
+
+    const h3 = document.createElement('h3');
+    h3.textContent = p.title;
+
+    const pdesc = document.createElement('p');
+    pdesc.textContent = p.desc;
+
+    const meta = document.createElement('div');
+    meta.className = 'meta';
+    meta.textContent = p.tech || '';
+
+    body.appendChild(h3);
+    body.appendChild(pdesc);
+    body.appendChild(meta);
+
+    a.appendChild(img);
+    a.appendChild(tag);
+    a.appendChild(body);
+
     container.appendChild(a);
   });
 }
